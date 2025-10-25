@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG效果表格</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse; /* 合并边框 */
+            width: 100%; /* 表格占满页面宽度 */
+            margin: 0 auto; /* 居中显示 */
+            background-color: white;
+            border: 2px solid #333;
+        }
+        th, td {
+            border: 1px solid #ccc; /* 单元格边框 */
+            padding: 15px; /* 单元格内边距 */
+            text-align: center; /* 内容居中 */
+        }
+        th {
+            background-color: #eee; /* 表头背景色 */
+            font-weight: bold;
+        }
+        svg, img {
+            max-width: 120px; /* 限制图片最大宽度 */
+            max-height: 120px; /* 限制图片最大高度 */
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">10个SVG的5种效果展示</h2>
+    
+    <table>
+        <!-- 表头：说明每列的效果 -->
+        <tr>
+            <th>原始图片</th>
+            <th>左右镜像</th>
+            <th>旋转180度</th>
+            <th>垂直压缩50%</th>
+            <th>灰度效果</th>
+        </tr>
+
+        <!-- 第1行：svg1 -->
+        <tr>
+            <td><img src="svg1.svg" alt="原始svg1"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg1.svg" alt="左右镜像svg1"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg1.svg" alt="旋转180度svg1"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg1.svg" alt="垂直压缩svg1"></div></td>
+            <td><img src="svg1.svg" style="filter: grayscale(100%);" alt="灰度svg1"></td>
+        </tr>
+
+        <!-- 第2行：svg2 -->
+        <tr>
+            <td><img src="svg2.svg" alt="原始svg2"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg2.svg" alt="左右镜像svg2"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg2.svg" alt="旋转180度svg2"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg2.svg" alt="垂直压缩svg2"></div></td>
+            <td><img src="svg2.svg" style="filter: grayscale(100%);" alt="灰度svg2"></td>
+        </tr>
+
+        <!-- 第3行：svg3 -->
+        <tr>
+            <td><img src="svg3.svg" alt="原始svg3"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg3.svg" alt="左右镜像svg3"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg3.svg" alt="旋转180度svg3"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg3.svg" alt="垂直压缩svg3"></div></td>
+            <td><img src="svg3.svg" style="filter: grayscale(100%);" alt="灰度svg3"></td>
+        </tr>
+
+        <!-- 第4行：svg4 -->
+        <tr>
+            <td><img src="svg4.svg" alt="原始svg4"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg4.svg" alt="左右镜像svg4"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg4.svg" alt="旋转180度svg4"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg4.svg" alt="垂直压缩svg4"></div></td>
+            <td><img src="svg4.svg" style="filter: grayscale(100%);" alt="灰度svg4"></td>
+        </tr>
+
+        <!-- 第5行：svg5 -->
+        <tr>
+            <td><img src="svg5.svg" alt="原始svg5"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg5.svg" alt="左右镜像svg5"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg5.svg" alt="旋转180度svg5"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg5.svg" alt="垂直压缩svg5"></div></td>
+            <td><img src="svg5.svg" style="filter: grayscale(100%);" alt="灰度svg5"></td>
+        </tr>
+
+        <!-- 第6行：svg6 -->
+        <tr>
+            <td><img src="svg6.svg" alt="原始svg6"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg6.svg" alt="左右镜像svg6"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg6.svg" alt="旋转180度svg6"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg6.svg" alt="垂直压缩svg6"></div></td>
+            <td><img src="svg6.svg" style="filter: grayscale(100%);" alt="灰度svg6"></td>
+        </tr>
+
+        <!-- 第7行：svg7 -->
+        <tr>
+            <td><img src="svg7.svg" alt="原始svg7"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg7.svg" alt="左右镜像svg7"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg7.svg" alt="旋转180度svg7"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg7.svg" alt="垂直压缩svg7"></div></td>
+            <td><img src="svg7.svg" style="filter: grayscale(100%);" alt="灰度svg7"></td>
+        </tr>
+
+        <!-- 第8行：svg8 -->
+        <tr>
+            <td><img src="svg8.svg" alt="原始svg8"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg8.svg" alt="左右镜像svg8"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg8.svg" alt="旋转180度svg8"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg8.svg" alt="垂直压缩svg8"></div></td>
+            <td><img src="svg8.svg" style="filter: grayscale(100%);" alt="灰度svg8"></td>
+        </tr>
+
+        <!-- 第9行：svg9 -->
+        <tr>
+            <td><img src="svg9.svg" alt="原始svg9"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg9.svg" alt="左右镜像svg9"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg9.svg" alt="旋转180度svg9"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg9.svg" alt="垂直压缩svg9"></div></td>
+            <td><img src="svg9.svg" style="filter: grayscale(100%);" alt="灰度svg9"></td>
+        </tr>
+
+        <!-- 第10行：svg10 -->
+        <tr>
+            <td><img src="svg10.svg" alt="原始svg10"></td>
+            <td><div style="transform: scaleX(-1);"><img src="svg10.svg" alt="左右镜像svg10"></div></td>
+            <td><div style="transform: rotate(180deg);"><img src="svg10.svg" alt="旋转180度svg10"></div></td>
+            <td><div style="transform: scaleY(0.5);"><img src="svg10.svg" alt="垂直压缩svg10"></div></td>
+            <td><img src="svg10.svg" style="filter: grayscale(100%);" alt="灰度svg10"></td>
+        </tr>
+    </table>
+</body>
+</html>
